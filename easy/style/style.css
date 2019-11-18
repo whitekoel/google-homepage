@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+}
+#container{
+    background-color: slategray;
+    height: 100vh;
+    display: grid;
+    /*grid-template-rows: 5% 85% 10%;*/
+    grid-template-rows: 50px 1fr 50px;   
+}
+header{
+    background-color: paleturquoise;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 0 0;
+}
+header div{
+    margin: 0 0 0 auto;
+}
+header a{
+    margin-right: 10px;
+}
+main{
+    display: grid;
+    grid-template-rows: 30% 10% 10% 50%;
+}
+main div.capsule{
+    background-color:papayawhip;
+    display: flex;
+}
+div#main-capsule{
+    align-self: flex-end;
+}
+div#logo, div#filling-form, div#search-area, div#region{
+    margin: 0 auto;
+}
+div#search-area{
+    /*display: block;*/
+}
+footer{
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: column;
+}
+.footer-capsule{
+    height: 50%;
+}
+#footer-capsule-bottom{
+    display: flex;
+}
+.left{
+    margin: auto auto auto 5px;
+}
+.right{
+    margin: auto 5px;
+}
+.span-style span{
+    margin: 0 5px 0 5px;
+}
