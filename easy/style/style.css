@@ -2,14 +2,14 @@ body{
     margin: 0px;
 }
 #container{
-    background-color: slategray;
+    background-color: white;
     height: 100vh;
     display: grid;
     /*grid-template-rows: 5% 85% 10%;*/
     grid-template-rows: 50px 1fr 50px;   
 }
 header{
-    background-color: paleturquoise;
+    background-color: white;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -24,9 +24,9 @@ header a{
 main{
     display: grid;
     grid-template-rows: 30% 10% 10% 50%;
+    background-color: white;
 }
 main div.capsule{
-    background-color:papayawhip;
     display: flex;
 }
 div#main-capsule{
@@ -37,9 +37,10 @@ div#logo, div#filling-form, div#search-area, div#region{
 }
 div#search-area{
     /*display: block;*/
+    display: inline-block;
 }
 footer{
-    background-color: darkslategrey;
+    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
 }
@@ -54,6 +55,9 @@ footer{
 }
 .right{
     margin: auto 5px;
+}
+.span-style{
+    
 }
 .span-style span{
     margin: 0 5px 0 5px;
