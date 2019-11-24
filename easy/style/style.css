@@ -1,12 +1,18 @@
 body{
     margin: 0px;
+    font-family: arial,sans-serif;
+}
+body a ,footer span{
+    color: #5f6368;
+}
+a:link{
+    text-decoration: none;
 }
 #container{
     background-color: white;
     height: 100vh;
     display: grid;
-    /*grid-template-rows: 5% 85% 10%;*/
-    grid-template-rows: 50px 1fr 50px;   
+    grid-template-rows: 50px 1fr 60px;   
 }
 header{
     background-color: white;
@@ -29,6 +35,9 @@ main{
 main div.capsule{
     display: flex;
 }
+div#region a{
+    color: cornflowerblue;
+}
 div#main-capsule{
     align-self: flex-end;
 }
@@ -39,6 +48,10 @@ div#search-area{
     /*display: block;*/
     display: inline-block;
 }
+div#search-area button{
+    height: 36px;
+    min-width: 54px;
+}
 footer{
     background-color: #f2f2f2;
     display: flex;
@@ -46,18 +59,15 @@ footer{
 }
 .footer-capsule{
     height: 50%;
-}
-#footer-capsule-bottom{
     display: flex;
 }
 .left{
     margin: auto auto auto 5px;
+    /*margin-top: auto;
+    margin-left: 5px;*/
 }
 .right{
     margin: auto 5px;
-}
-.span-style{
-    
 }
 .span-style span{
     margin: 0 5px 0 5px;
