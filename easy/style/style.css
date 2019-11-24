@@ -8,21 +8,38 @@ body a ,footer span{
 a:link{
     text-decoration: none;
 }
+a:hover{
+    text-decoration: underline;
+}
 #container{
     background-color: white;
     height: 100vh;
     display: grid;
-    grid-template-rows: 50px 1fr 60px;   
+    grid-template-rows: 50px 1fr 75px;
+    font-size: 13px;
+}
+#container a{
+    color: #000000de;
 }
 header{
     background-color: white;
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 10px 0 0 0;
+    align-items: center;
 }
 header div{
     margin: 0 0 0 auto;
+    padding: 10px;
+}
+header div button{
+    height: 30px;
+    width: 65px;
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #fff;
 }
 header a{
     margin-right: 10px;
@@ -34,6 +51,38 @@ main{
 }
 main div.capsule{
     display: flex;
+}
+div.search-btn ,div.search-box{
+    align-items: center;
+}
+div#search-area button{
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #5F6368;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+div#search-area button:hover{
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+div#filling-form{
+    width: 80%;
+    height: 60%;
+}
+div#filling-form input{
+    display: block;
+    margin : 0 auto;
+    height: 100%;
+    width: 40%;
+    border-radius: 20px;
+    border: 1px solid #dfe1e5;
+    padding-left: 15px;
+    font-size: 15px;
 }
 div#region a{
     color: cornflowerblue;
@@ -60,6 +109,8 @@ footer{
 .footer-capsule{
     height: 50%;
     display: flex;
+    border-top: solid #e4e4e4;
+    border-width: 1px;
 }
 .left{
     margin: auto auto auto 5px;
@@ -71,4 +122,10 @@ footer{
 }
 .span-style span{
     margin: 0 5px 0 5px;
+}
+.top-footer{
+    font-size: 15px;
+}
+.bottom-footer{
+    font-size: 13px;
 }
